@@ -1,0 +1,5 @@
+2018-04-17
+
+	Will need to make not_found page 'fancier.'
+	line 4 in /imports/ui/layouts/body/body.js is carryover code.
+	lines 3-6 in /imports/startup/server/register-api.js are NA. Just carryover guidelines.
