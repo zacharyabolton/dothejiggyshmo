@@ -1,1 +1,75 @@
 /* CSS declarations go here */
+*{
+	font-size: 16px;
+    margin: 0;
+	padding: 0;
+
+}
+
+html, #__blaze-root {
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	color: rgba( 75,107, 40,1);
+	background-color: rgba(48, 5, 21, 1);
+	background: linear-gradient(180deg, rgba(9, 0, 3, 1), rgba(48, 5, 21, 0.9)), url("BG.jpg") no-repeat center;
+	background-position: right top;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+
+#main {
+	min-height: 100%;
+    overflow: auto;
+    padding-top: 7.3rem;
+    padding-bottom: 3rem;
+    margin-top: -7.3rem;
+    /* must be same height as the footer */
+}
+
+nav{
+	position: relative;
+	/*clear: both;*/
+}
+
+footer {
+  position: relative;
+  margin-top: -3rem;
+  /* negative value of footer height */
+  height: 3rem;
+  clear: both;
+}
+
+/* Opera Fix */
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
+p{
+	color: grey;
+}
+
+.bigD {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.5rem solid rgba( 72, 30, 78,1);
+  border-radius: 0% 50% 50% 0%;
+  display: inline-block;
+}
+
+.littleO {
+	margin-left: -1.1rem;
+	height: 1.2rem;
+	width: 1.2rem;
+	border: 0.3rem solid rgba(119, 61, 44,1);
+	border-radius: 50%;
+	display: inline-block;
+}
