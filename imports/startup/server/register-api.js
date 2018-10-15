@@ -1,6 +1,7 @@
 // Register your apis here
 
-// import '../../api/docs/docs.js';
-// import '../../api/docs/server/publications.js';
-// import '../../api/docs/server/methods/insert/docs.js';
-// import '../../api/docs/server/methods/remove/docs.js';
+import '../../api/posts/posts.js';
+import '../../api/posts/server/publications.js';
+import '../../api/posts/server/methods/insert/posts.js';
+import '../../api/posts/server/methods/remove/posts.js';
+import '../../api/posts/server/methods/update/posts.js';
