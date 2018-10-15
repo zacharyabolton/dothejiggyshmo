@@ -12,22 +12,22 @@ html, #__blaze-root {
 
 body{
 	height: 100%;
-	color: rgba( 75,107, 40,1);
+	color: hsl(13.45,39.23%,80%)/*rgba(75, 107, 40, 1)*/;
 	background-color: rgba(48, 5, 21, 1);
 	background: linear-gradient(180deg, rgba(9, 0, 3, 1), rgba(48, 5, 21, 0.9)), url("BG.jpg") no-repeat center;
 	background-position: right top;
-    background-attachment: fixed;
-    background-size: cover; 
+  background-attachment: fixed;
+  background-size: cover; 
 }
 
 
 #main {
 	min-height: 100%;
-    overflow: auto;
-    padding-top: 7.3rem;
-    padding-bottom: 3rem;
-    margin-top: -7.3rem;
-    /* must be same height as the footer */
+  overflow: auto;
+  padding-top: 7.3rem;
+  padding-bottom: 3rem;
+  margin-top: -7.3rem;
+  /* must be same height as the footer */
 }
 
 nav{
@@ -57,19 +57,9 @@ p{
 	color: grey;
 }
 
-.bigD {
-  height: 2.5rem;
-  width: 2.5rem;
-  border: 0.5rem solid rgba( 72, 30, 78,1);
-  border-radius: 0% 50% 50% 0%;
-  display: inline-block;
-}
-
-.littleO {
-	margin-left: -1.1rem;
-	height: 1.2rem;
-	width: 1.2rem;
-	border: 0.3rem solid rgba(119, 61, 44,1);
-	border-radius: 50%;
-	display: inline-block;
+.logo {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: -1;
 }
