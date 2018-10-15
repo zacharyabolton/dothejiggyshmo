@@ -1,13 +1,12 @@
 <template name="App_home">
 	<h1>Do the Jiggy Shmo.</h1>
-	<p>this is hardcoeded into the App_home template at ui/pages/home/home.html.</p>
     {{#if Template.subscriptionsReady}}
         {{#each posts}}
-            <!-- {{> post}} -->
-            <p>looks like one post was found</p>
+            {{title}}
         {{else}}
             <p style="color: yellow;">Nothing posted yet.</p>
         {{/each}}
+        <span style="color: #E30054; width: 100em;" class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 	{{else}}
         {{> App_loading}}
     {{/if}}

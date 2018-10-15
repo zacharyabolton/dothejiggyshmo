@@ -20,4 +20,4 @@ Template.App_home.helpers({
             return posts;
         }
     }
-})
+});
