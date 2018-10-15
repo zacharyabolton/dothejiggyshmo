@@ -1,6 +1,14 @@
 <template name="App_home">
 	<h1>Do the Jiggy Shmo.</h1>
 	<p>this is hardcoeded into the App_home template at ui/pages/home/home.html.</p>
-
-	
+    {{#if Template.subscriptionsReady}}
+        {{#each posts}}
+            <!-- {{> post}} -->
+            <p>looks like one post was found</p>
+        {{else}}
+            <p style="color: yellow;">Nothing posted yet.</p>
+        {{/each}}
+	{{else}}
+        {{> App_loading}}
+    {{/if}}
 </template>

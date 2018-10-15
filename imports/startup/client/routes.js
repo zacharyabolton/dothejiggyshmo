@@ -1,14 +1,17 @@
 import { Router } from 'meteor/iron:router';
 
-// Import needed templates
+// templates
+import '../../ui/components/banner/banner.js';
+import '../../ui/components/footer/footer.js';
+
 import '../../ui/layouts/body/body.js';
+
+import '../../ui/pages/about/about.js';
+import '../../ui/pages/home/home.js';
 import '../../ui/pages/loading/loading.js';
 import '../../ui/pages/not_found/not_found.js';
 
-import '../../ui/pages/home/home.js';
-import '../../ui/pages/about/about.js';
 
-import '../../ui/components/posts/post.js';
 
 Router.configure({
   	layoutTemplate: 'App_body',
@@ -19,3 +22,5 @@ Router.configure({
 Router.route('/', function() {
     this.render('App_home');
 });
+
+
