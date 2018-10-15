@@ -1,28 +1,21 @@
-import { FlowRouter } from 'meteor/kadira:flow-router';
-import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+import { Router } from 'meteor/iron:router';
 
 // Import needed templates
 import '../../ui/layouts/body/body.js';
+import '../../ui/pages/loading/loading.js';
 import '../../ui/pages/not_found/not_found.js';
+
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/about/about.js';
 
-FlowRouter.route('/', {
-  name: 'App.home',
-  action() {
-    BlazeLayout.render('App_body', { main: 'App_home' });
-  },
+import '../../ui/components/posts/post.js';
+
+Router.configure({
+  	layoutTemplate: 'App_body',
+  	loadingTemplate: 'App_loading',
+	notFoundTemplate: "App_notFound"
 });
 
-FlowRouter.route('/about', {
-  name: 'App.about',
-  action() {
-    BlazeLayout.render('App_body', { main: 'App_about' });
-  },
+Router.route('/', function() {
+    this.render('App_home');
 });
-
-FlowRouter.notFound = {
-  action() {
-    BlazeLayout.render('App_body', { main: 'App_notFound' });
-  },
-};
