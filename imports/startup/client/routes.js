@@ -24,4 +24,7 @@ Router.route('/', function() {
     this.render('App_home');
 });
 
+Router.route('/:params', function() {
+    this.render('App_home');
+});
 
