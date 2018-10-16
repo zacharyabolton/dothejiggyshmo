@@ -1,0 +1,17 @@
+<template name="App_post">
+    <h2>{{title}}</h2>
+    <h6>{{date_posted}}</h6>
+    <p>{{content}}</p>
+    <a class="btn share_btn">
+        <span class="fa fa-twitter share_icon"></span>
+    </a>
+    <a class="btn share_btn">
+        <span class="fa fa-facebook share_icon"></span>
+    </a>
+    <a class="btn share_btn">
+        <span class="fa fa-linkedin share_icon"></span>
+    </a>
+    <a class="btn share_btn" href="mailto:?Subject={{title}}&body={{slug}}" target="_top">
+        <span class="fa fa-envelope share_icon"></span>
+    </a>
+</template>

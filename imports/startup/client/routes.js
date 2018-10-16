@@ -10,6 +10,7 @@ import '../../ui/pages/about/about.js';
 import '../../ui/pages/home/home.js';
 import '../../ui/pages/loading/loading.js';
 import '../../ui/pages/not_found/not_found.js';
+import '../../ui/pages/post/post.js';
 
 
 

@@ -63,3 +63,19 @@ p{
   position: fixed;
   z-index: -1;
 }
+
+.share_btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #470651;
+  border-radius: 0;
+}
+
+.share_icon {
+  color: #9E01B4;
+}
+
+.share_btn:hover{
+  border-color: #9E01B4;
+}
+
