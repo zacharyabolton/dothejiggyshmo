@@ -79,3 +79,12 @@ p{
   border-color: #9E01B4;
 }
 
+.pagination {
+  color: rgba(255, 57,  0,0.2);
+}
+
+.pagination:hover {
+  cursor: pointer;
+  color: rgba(255, 57,  0,1);
+}
+
