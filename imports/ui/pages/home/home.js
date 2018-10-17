@@ -60,6 +60,7 @@ Template.App_home.events({
         event.preventDefault();
         Template.instance().slug.set();
         Template.instance().allposts.set(true);
-        Template.instance().requestedPostNumber.set(1);        
+        Template.instance().requestedPostNumber.set(1);
+        Router.go('home')      
     }
 })

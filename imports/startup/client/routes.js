@@ -17,14 +17,16 @@ import '../../ui/pages/post/post.js';
 Router.configure({
   	layoutTemplate: 'App_body',
   	loadingTemplate: 'App_loading',
-	notFoundTemplate: "App_notFound"
+	notFoundTemplate: 'App_notFound'
 });
 
 Router.route('/', function() {
     this.render('App_home');
+}, {
+    name: 'home'
 });
 
-Router.route('/:slug', function() {
+Router.route('/post/:slug', function() {
     this.render('App_home');
 });
 

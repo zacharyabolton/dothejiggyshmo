@@ -1,10 +1,11 @@
 <template name="App_home">
 	<h1>Do <i style="font-size: 3.7rem;">the</i> Jiggy Shmo.</h1>
+    <hr style="border-color: #E30054;">
     {{#if Template.subscriptionsReady}}
         {{#each posts}}
             {{> App_post}}
         {{else}}
-            <p style="color: yellow;">Nothing posted yet.</p>
+            <p style="color: yellow;">This post does not exist.</p>
         {{/each}}
         {{#if allposts}}
             <div style="text-align: center;">
