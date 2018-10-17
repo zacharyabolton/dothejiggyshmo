@@ -5,6 +5,7 @@ import { check } from 'meteor/check';
 import { Match } from 'meteor/check';
 
 Meteor.publish( 'allposts', function( requestedDocNumber ) {
+  Meteor._sleepForMs(5000);
   var oneBasedPostIndex, postIndex;
   // get total number of docs
   let numberposts = Posts.find().count()
