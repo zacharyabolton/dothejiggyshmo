@@ -6,10 +6,16 @@
         {{else}}
             <p style="color: yellow;">Nothing posted yet.</p>
         {{/each}}
-        <div style="text-align: center;">
-            <span style="text-align: center; font-size: 12rem;" class="glyphicon glyphicon-chevron-up pagination" aria-hidden="true"></span>
-            <span style="text-align: center; font-size: 12rem;" class="glyphicon glyphicon-chevron-down pagination" aria-hidden="true"></span>
-        </div>
+        {{#if allposts}}
+            <div style="text-align: center;">
+                <span style="text-align: center; font-size: 12rem;" class="glyphicon glyphicon-chevron-up pagination" aria-hidden="true"></span>
+                <span style="text-align: center; font-size: 12rem;" class="glyphicon glyphicon-chevron-down pagination" aria-hidden="true"></span>
+            </div>
+        {{else}}
+            <a class="return-home" style="text-align: center;" href="/">
+                home
+            </a>
+        {{/if}}
 	{{else}}
         {{> App_loading}}
     {{/if}}
