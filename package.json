@@ -6,7 +6,7 @@
     "production": "DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy --settings ../settings_files/dothejiggyshmo_settings.json dothejiggyshmo.meteorapp.com"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0-beta.42",
+    "@babel/runtime": "^7.1.2",
     "meteor-node-stubs": "^0.3.2"
   }
 }

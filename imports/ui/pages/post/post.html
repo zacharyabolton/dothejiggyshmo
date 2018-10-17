@@ -2,12 +2,15 @@
     <h2>{{title}}</h2>
     <h6>{{date_posted}}</h6>
     <p>{{content}}</p>
-    <a class="btn share_btn" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}:%20{{slug}}%0A@dothejiggyshmo">
+    <!-- twitter -->
+    <a class="btn share_btn" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}:%20dothejiggyshmo.com%2F{{slug}}%0A@dothejiggyshmo">
         <span class="fa fa-twitter share_icon"></span>
     </a>
+    <!-- facebook -->
     <a class="btn share_btn" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=dothejiggyshmo.com%2F{{slug}}=sdkpreparse">
         <span class="fa fa-facebook share_icon"></span>
     </a>
+    <!-- email -->
     <a class="btn share_btn" href="mailto:?Subject={{title}}&body=dothejiggyshmo.com/{{slug}}" target="_top">
         <span class="fa fa-envelope share_icon"></span>
     </a>

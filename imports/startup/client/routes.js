@@ -24,7 +24,7 @@ Router.route('/', function() {
     this.render('App_home');
 });
 
-Router.route('/:params', function() {
+Router.route('/:slug', function() {
     this.render('App_home');
 });
 
