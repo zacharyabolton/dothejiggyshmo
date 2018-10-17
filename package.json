@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "production": "DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy --settings ../settings_files/dothejiggyshmo_settings.json dothejiggyshmo.meteorapp.com"
+    "deploy": "DEPLOY_HOSTNAME=us-east-1.galaxy-deploy.meteor.com meteor deploy --settings ../settings_files/dothejiggyshmo_settings.json dothejiggyshmo.meteorapp.com"
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
