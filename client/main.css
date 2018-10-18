@@ -120,6 +120,7 @@ p{
   color: black;
   padding: 2rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .return-home:hover {
@@ -128,30 +129,3 @@ p{
   background-color: hsl(0,0%,70%);
   cursor: pointer;
 }
-
-/*.return-home path:hover, .return-home rect:hover {
-  fill: hsl(337.67,81.13%,100%);
-}
-
-.return-home ellipse:hover {
-  fill: hsl(292,86.21%,100%);
-}
-*/
-/*.return-cls-1 {
-  fill: none;
-  stroke: #ff3900;
-  stroke-miterlimit: 10;
-  stroke-width: 51px;
-}
-
-.return-cls-2 {
-  fill: hsl(337.67,81.13%,12.39%);
-  stroke: #ff3900;
-  stroke-miterlimit: 10;
-  stroke-width: 51px;
-}
-
-.return-cls-3 {
-  fill: hsl(292,86.21%,99.06%);
-}
-*/

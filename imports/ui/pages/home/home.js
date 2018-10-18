@@ -32,9 +32,10 @@ Template.App_home.onCreated( () => {
 });
 
 Template.App_home.helpers({
-    posts() {
+    post() {
         let post = Posts.find({});
         if ( post ) {
+            console.log(post)
             return post;
         } else {
             console.log('no post found!!!!!!')

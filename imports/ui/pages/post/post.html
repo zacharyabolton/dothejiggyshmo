@@ -1,7 +1,21 @@
 <template name="App_post">
     <h2>{{title}}</h2>
     <h6>{{date_posted}}</h6>
-    <p>{{content}}</p>
+    {{#each content}}
+        {{#if equals this 'quote'}}
+            <h5 style="text-align: center;">
+                <b style="margin: 2rem; font-size: 5rem; font-family: Georgia, serif;">"</b>
+                    {{this.quote}}
+                <b style="margin: 2rem; font-size: 5rem; font-family: Georgia, serif;">"</b>
+            </h5>
+        {{/if}}
+        {{#if equals this 'paragraph'}}
+            <p>{{this.paragraph}}</p>
+        {{/if}}
+        {{#if equals this 'image'}}
+            <img style="display: block; width: 100%; margin-top: 3rem; margin-bottom: 3rem;" src="{{this.image}}"/>
+        {{/if}}
+    {{/each}}
     <!-- twitter -->
     <a class="btn share_btn" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}:%20dothejiggyshmo.com%2Fpost%2F{{slug}}%0A@dothejiggyshmo">
         <span class="fa fa-twitter share_icon"></span>

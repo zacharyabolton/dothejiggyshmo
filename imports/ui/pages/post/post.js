@@ -1,30 +1,38 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 
-// import { Posts }  from '../../../api/posts/posts.js';
-
 import './post.html';
 
-Template.App_post.onCreated( () => {
-    // let template = Template.instance();
-    // slug = Router.current().params;
-    // if ( slug ) {
-    //     // template.autorun( () => {
-    //     //     template.subscribe( 'allposts' );
-    //     // });
-    //     console.log('a slug has been detected!')
-    // } else {
-    //     // template.autorun( () => {
-    //     //     template.subscribe( 'allposts' );
-    //     // });
-    // }
-});
+// Template.App_post.onCreated( () => {
 
-// Template.App_post.helpers({
-//     posts() {
-//         let posts = Posts.find();
-//         if ( posts ) {
-//             return posts;
-//         }
-//     }
-// })
+//     let template = Template.instance();
+
+//     template.paragraphNumber = new ReactiveVar();
+//     template.requestedPostNumber.set(-1)
+
+//     template.autorun( () => {
+
+//     });
+
+// });
+
+Template.App_post.helpers({
+    // arrayify( obj ) {
+    //     var result = [];
+    //     var paragraphs = []
+    //     for (var key in obj) {
+    //         if ( Number.isInteger(key) ) {
+    //             result.push({name:key,value:undefined});
+    //             paragraphs.push(obj[key])
+    //         }
+    //         result.push({name:key,value:obj[key]});
+    //     }
+    //     result.push({name:"paragraphs",value:paragraphs})
+    //     return result;
+    // },
+    equals( a, b ) {
+        console.log(Object.keys(a)[0])
+        console.log(b)
+        return Object.keys(a)[0] === b;
+    }
+});
