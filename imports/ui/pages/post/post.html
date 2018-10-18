@@ -7,38 +7,42 @@
     {{/if}}
     <h6>{{date_posted}}</h6>
     <br>
-    {{#each content}}
-        
-        {{#if equals this 'quote'}}
-        <!-- QUOTE -->
-            <div style="text-align: center; font-family: 'Impact';">
-                <h4 style="text-align: center;">
-                    <b style="margin: 2rem; font-size: 5rem;">"</b>
-                        {{this.quote.quote}}
-                    <b style="margin: 2rem; font-size: 5rem;">"</b>
-                </h4>
-                <p style="text-align: right;">-– {{this.quote.attribution}}</p>
-            </div>
-        {{/if}}
-        
-        {{#if equals this 'paragraph'}}
-        <!-- PARAGRAPH -->
-            <p>
-                {{#if this.paragraph.header}}
-                    <h2>{{this.paragraph.header}}</h2>
-                {{/if}}
-                {{#autolink}}
-                    {{this.paragraph.paragraph}}
-                {{/autolink}}
-            </p>
-        {{/if}}
-        
-        {{#if equals this 'image'}}
-        <!-- IMAGE -->
-            <img alt="{{this.image.alt}}" style="display: block; width: {{this.image.width}}%; margin: auto; margin-top: 3rem;" src="{{this.image.src}}"/>
-            <h5 style="text-align: center; margin-bottom: 3rem;">{{this.image.alt}}</h5>
-        {{/if}}
-    {{/each}}
+    <div style="padding: 1rem;">
+        {{#each content}}
+            
+            {{#if equals this 'quote'}}
+            <!-- QUOTE -->
+                <div style="text-align: center; font-family: 'Georgia';">
+                    <div style="max-width: 600px;">
+                        <h4 style="text-align: center;">
+                            <b style="margin: 1.2rem; font-size: 5rem;">"</b>
+                                {{this.quote.quote}}
+                            <b style="margin: 1.2rem; font-size: 5rem;">"</b>
+                            <span style="display: block; text-align: right;">–{{#autolink}}{{this.quote.attribution}}{{/autolink}}</span>
+                        </h4>
+                    </div>
+                </div>
+            {{/if}}
+            
+            {{#if equals this 'paragraph'}}
+            <!-- PARAGRAPH -->
+                <p>
+                    {{#if this.paragraph.header}}
+                        <h2>{{this.paragraph.header}}</h2>
+                    {{/if}}
+                    {{#autolink}}
+                        {{this.paragraph.paragraph}}
+                    {{/autolink}}
+                </p>
+            {{/if}}
+            
+            {{#if equals this 'image'}}
+            <!-- IMAGE -->
+                <img alt="{{this.image.alt}}" style="display: block; width: 100%; max-width: {{this.image.max_width}}px; margin: auto; margin-top: 3rem;" src="{{this.image.src}}"/>
+                <h5 style="text-align: center; margin-bottom: 3rem;">{{this.image.alt}}</h5>
+            {{/if}}
+        {{/each}}
+    </div>
     <div style="margin-top: 3rem;">
         <!-- twitter -->
         <a class="btn share_btn" target="_blank" href="https://twitter.com/intent/tweet?text={{title}}:%20dothejiggyshmo.com%2Fpost%2F{{slug}}%0A@dothejiggyshmo">
