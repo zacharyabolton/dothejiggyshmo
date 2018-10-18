@@ -31,8 +31,6 @@ Template.App_post.helpers({
     //     return result;
     // },
     equals( a, b ) {
-        console.log(Object.keys(a)[0])
-        console.log(b)
         return Object.keys(a)[0] === b;
     }
 });
