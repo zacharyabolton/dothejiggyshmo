@@ -11,68 +11,63 @@ Meteor.startup(() => {
     if (Posts.find().count() === 0) {
         const data = [
             {
-                "title": "first test post",
-                "subtitle": "or how I built a blog.",
-                "slug": "first-test-post",
-                "date_created": "2017-09-13",
-                "date_posted": "2017-09-13",
+                "title": "Hello World",
+                "subtitle": "My first blog post",
+                "slug": "my-first-blog-post",
+                "date_created": "2018-10-18",
+                "date_posted": "2018-10-18",
                 "content": [
-                    {"paragraph": {
-                        "paragraph": "Lorem ipsum dolor sit amet, www.kidchess.com consectetur adipiscing elit. Etiam euismod, augue nec sodales imperdiet, quam lorem faucibus lectus, eget posuere arcu justo imperdiet justo. dothejiggyshmo.com Pellentesque quis mollis sapien. Proin pretium feugiat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut diam arcu. In ex lorem, suscipit id posuere in, hendrerit sed mauris. Donec at placerat tortor. Nulla sit amet nibh risus. Fusce id aliquet libero. Nullam sollicitudin, nunc ut malesuada semper, est felis semper risus, at accumsan risus urna eu nisl. Ut mattis metus non nisi venenatis, sed consequat nunc dignissim. Proin non tempus leo. Duis eleifend sodales gravida. Fusce nec justo sed lorem viverra viverra. Mauris pulvinar erat nec tempus interdum.",
-                        "header": "Garbage"
-                    }},
-                    {"quote": {
-                        "quote": "To be or not to be, that is the question",
-                        "attribution": "Hamlet"
-                    }},
-                    {"paragraph": {
-                        "paragraph": "Cras pretium elit vitae ligula sagittis, sed finibus orci tincidunt. Cras consequat eu urna in dignissim. Morbi accumsan vehicula ultrices. Proin fermentum in quam eget congue. Aenean vitae nunc dignissim, molestie tellus eu, commodo ante. Suspendisse sagittis vestibulum sapien, a fringilla odio eleifend ut."
-                    }},
-                    {"image": {
-                        "src": "example.jpg",
-                        "max_width": 600,
-                        "alt": "some random alt text"
-                    }},
-                    {"paragraph": {
-                        "paragraph": "yo bro. Do the jiggy shmo. https://www.google.com",
-                        "header": "finish"
-                    }}
-                ]
-            },
-            {
-                "title": "Second test post",
-                "subtitle": "Or how I improved a blog",
-                "slug": "second-test-post",
-                "date_created": "2018-09-13",
-                "date_posted": "2018-09-13",
-                "content": [
-                    {"paragraph": {
-                        "paragraph": "Lorem ipsum dolor sit amet, www.kidchess.com consectetur adipiscing elit. Etiam euismod, augue nec sodales imperdiet, quam lorem faucibus lectus, eget posuere arcu justo imperdiet justo. dothejiggyshmo.com Pellentesque quis mollis sapien. Proin pretium feugiat tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse ut diam arcu. In ex lorem, suscipit id posuere in, hendrerit sed mauris. Donec at placerat tortor. Nulla sit amet nibh risus. Fusce id aliquet libero. Nullam sollicitudin, nunc ut malesuada semper, est felis semper risus, at accumsan risus urna eu nisl. Ut mattis metus non nisi venenatis, sed consequat nunc dignissim. Proin non tempus leo. Duis eleifend sodales gravida. Fusce nec justo sed lorem viverra viverra. Mauris pulvinar erat nec tempus interdum."
-                    }},
-                    {"image": {
-                        "src": "example2.jpg",
-                        "max_width": 6000,
-                        "alt": "This is a relavent image to what I'm talking about, which is nothing..."
-                    }},
-                    {"paragraph": {
-                        "paragraph": "As they say, \"I felt like saying 'as they say'.\" Check out www.google.com while you're at it."
-                    }},
-                    {"quote": {
-                        "quote": "I felt like saying as they say.",
-                        "attribution": "Nobody"
-                    }},
-                    {"paragraph": {
-                        "paragraph": "Cras pretium elit vitae ligula sagittis, sed finibus orci tincidunt. Cras consequat eu urna in dignissim. Morbi accumsan vehicula ultrices. Proin fermentum in quam eget congue. Aenean vitae nunc dignissim, molestie tellus eu, commodo ante. Suspendisse sagittis vestibulum sapien, a fringilla odio eleifend ut."
-                    }},
-                    {"image": {
-                        "src": "example3.jpg",
-                        "max_width": 400,
-                        "alt": "Cute, right?"
-                    }},
-                    {"paragraph": {
-                        "paragraph": "yo bro. Do the jiggy shmo. https://www.google.com",
-                        "header": "In conclusion"
-                    }}
+                    {
+                        "paragraph": {
+                            "paragraph": "Hello world. Or, at least at this moment, hello no-one. This is my blog, a.k.a. a fancy way for me to talk to myself. My name is Zac. I enjoy coding, politics, social issues, reading, science, and tech among other things. This particular post is mainly a test to make sure everything on the site is working and looks good."
+                        }
+                    },
+                    {
+                        "paragraph": {
+                            "paragraph": "Here\u2019s a picture of me and my wife:"
+                        }
+                    },
+                    {
+                        "image": {
+                            "src": "https://s3.amazonaws.com/dothejiggyshmo-bucket/13735050_309259902741608_4065521869643816805_o+copy.jpg",
+                            "max_width": 300,
+                            "alt": "Handsome couple, eh?"
+                        }
+                    },
+                    {
+                        "paragraph": {
+                            "paragraph": "I\u2019ve implemented some features for this blog such as quote emphasis/decoration; so how about I share a quote to test that out?"
+                        }
+                    },
+                    {
+                        "quote": {
+                            "quote": "As long as I live under the capitalistic system, I expect to have my life influenced by the demands of moneyed people. But I will be damned if I propose to be at the beck and call of every itinerant scoundrel who has two cents to invest in a postage stamp.",
+                            "attribution": "William Faulkner's letter of resignation from the US Postal Service."
+                        }
+                    },
+                    {
+                        "paragraph": {
+                            "paragraph": "What d\u2019ya think? I chose this quote because I heard it recently in a VlogBrothers video and thought it was just lovely. (https://www.youtube.com/watch?v=tBmjLEq9-1k) Also, it allows me to share aforepasted quote in order to test my auto-linking feature for this blog."
+                        }
+                    },
+                    {
+                        "paragraph": {
+                            "paragraph": "Okay so I\u2019m gonna start wrapping this up. Let\u2019s see how a full sized image looks:"
+                        }
+                    },
+                    {
+                        "image": {
+                            "src": "https://s3.amazonaws.com/dothejiggyshmo-bucket/drill-3702674_1280.jpg ",
+                            "max_width": 6000,
+                            "alt": "Ooh, Nice drill bit! Thanks to pixabay and Lars_Nissen_Photoart for providing this image under a creative commons license (https://pixabay.com/photo-3702674/)"
+                        }
+                    },
+                    {
+                        "paragraph": {
+                            "header": "Final thoughts",
+                            "paragraph": "I don\u2019t actually have any final thoughts. I'm just testing out the heading feature. Well, I guess that\u2019s it. Tchau for now!"
+                        }
+                    }
                 ]
             }
         ];
