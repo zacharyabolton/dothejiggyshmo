@@ -82,7 +82,7 @@ body:before {
 
 
 
-h3, h6 {
+title, h3, h6 {
 	color: hsl(13.45,59.23%,50%);
 }
 

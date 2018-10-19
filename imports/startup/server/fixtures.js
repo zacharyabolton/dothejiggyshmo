@@ -12,8 +12,11 @@ Meteor.startup(() => {
         const data = [
             {
                 "title": "Hello World",
+                "keywords": "test, post",
+                "description": "a test post for dothejiggyshmo.com",
+                "author": "Zac Bolton",
                 "subtitle": "My first blog post",
-                "slug": "my-first-blog-post",
+                "slug": "hello-world",
                 "date_created": "2018-10-18",
                 "date_posted": "2018-10-18",
                 "content": [
